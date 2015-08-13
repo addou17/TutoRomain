@@ -17,6 +17,7 @@
        
        <!--  Chargement des controllers et restcontroller au demarrage -->
        <context:component-scan base-package="controller"/>
+       
 
 
 </beans>

@@ -14,9 +14,9 @@ You have clicked on the link
 
 <form:form action="click" method="post" commandName="personne">
 
-	<p>Nom : <form:input type="text" path="nom"/></p>
-	<p>Prenom : <form:input path="prenom"/></p>
-	<p>Age : <form:input path="age"/></p>
+	<p>Nom : <form:input type="text" path="nom" autocomplete="off"/></p>
+	<p>Prenom : <form:input path="prenom" autocomplete="off"/></p>
+	<p>Age : <form:input path="age" autocomplete="off"/></p>
 	
 	<form:button>Submit</form:button>
 
