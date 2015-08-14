@@ -5,10 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <title>Resultat</title>
 </head>
 <body>
+<table><tr>
 
+<td><a class="btn btn-primary btn-lg" href="/ProjetTest" role="button">Home</a></td>
+<td><a class="btn btn-primary btn-lg" href="/ProjetTest/lien/click" role="button">New Person</a></td>
+<td><a class="btn btn-primary btn-lg" href="/ProjetTest/lien/affichage" role="button">Show All</a></td>
+</tr>
+</table>
+
+<br/>
+	
 Salut <strong> <c:out value="${personne.prenom}"/> <c:out value="${personne.nom}"/> </strong> 
 
 

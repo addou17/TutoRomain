@@ -35,5 +35,15 @@ public class PersonneDao {
 		
 		return personnes;
 	}
+	public void update(Personne pers)
+	{
+		String request = "Update Personne set NOM=?, PRENOM=?, AGE=? where ID=?";
+		jdbcTemplate.update(request, pers.getNom(), pers.getPrenom(), pers.getAge(), pers.getId());
+	}
+	public void delete (Integer id)
+	{
+		String request="Delete from Personne where ID=?";
+		jdbcTemplate.update(request, id);
+	}
 
 }

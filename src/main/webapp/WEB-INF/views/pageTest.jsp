@@ -16,8 +16,10 @@
 	</center>
 	</p>
 
-	<form:form action="click" method="post" commandName="personne"
-		class="form-horizontal">
+	<form:form action="/ProjetTest/lien/click" method="post"
+		commandName="personne" class="form-horizontal">
+
+		<form:input type="hidden" class="form-control" path="id" autocomplete="off" />
 
 		<div class="form-group">
 			<form:label path="prenom"

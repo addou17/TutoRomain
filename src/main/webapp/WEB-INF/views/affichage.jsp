@@ -34,15 +34,19 @@
    		<tr>
 			<th>ID</th>
 			<th>Nom</th>
-			<th>prénom</th>
+			<th>Prénom</th>
 			<th>Age</th>
+			<th></th>
+			
 		</tr>
 		<c:forEach var="item" items="${toutLeMonde}" varStatus="elm">
 			<tr>
-				<td>${item.id}</td>
+				<td>${elm.index + 1}</td>
 				<td>${item.nom}</td>
 				<td>${item.prenom}</td>
 				<td>${item.age}</td>
+				<td><a href='/ProjetTest/lien/update/<c:out value="${item.id}"/>'><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+				<a href='/ProjetTest/lien/delete/<c:out value="${item.id}"/>'><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
 			</tr>
 
 		</c:forEach>
