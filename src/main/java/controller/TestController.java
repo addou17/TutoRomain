@@ -1,5 +1,7 @@
 package controller;
 
+import java.util.List;
+
 import model.Personne;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +25,18 @@ public class TestController {
 	public String test(Model model) {
 
 		Personne personnePresente = personneService.retrieveById(1);
+
 		model.addAttribute("personneBdd", personnePresente);
 		model.addAttribute("personne", new Personne());
-		return "pageTest";
+		return "pageTest"; //Le nom de la page sur laquelle les résultats sont affichés
+	}
+	@RequestMapping("/affichage")
+	public String afficher(Model model)
+	{
+		
+		List<Personne> toutLeMonde= personneService.retrieveAllPersonnes();
+		model.addAttribute("toutLeMonde",toutLeMonde);
+		return "affichage";
 	}
 
 	@RequestMapping(value = "/click", method = RequestMethod.POST)

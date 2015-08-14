@@ -27,5 +27,13 @@ public class PersonneDao {
 		Personne personne = jdbcTemplate.queryForObject(request, new Object[] { id }, new PersonneRowMapper());
 		return personne;
 	}
+	
+	public List<Personne> retrieveAllPersonnes()
+	{
+		String request="Select * from Personne";
+		List<Personne> personnes = jdbcTemplate.query(request, new PersonneRowMapper());
+		
+		return personnes;
+	}
 
 }

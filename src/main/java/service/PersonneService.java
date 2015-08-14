@@ -28,5 +28,9 @@ public class PersonneService {
 	{
 		return personneDao.retrieveById(id);
 	}
+	public List<Personne> retrieveAllPersonnes()
+	{
+		return personneDao.retrieveAllPersonnes();
+	}
 	
 }
