@@ -21,6 +21,9 @@ public class TestController {
 
 	@RequestMapping("/click")
 	public String test(Model model) {
+
+		Personne personnePresente = personneService.retrieveById(1);
+		model.addAttribute("personneBdd", personnePresente);
 		model.addAttribute("personne", new Personne());
 		return "pageTest";
 	}

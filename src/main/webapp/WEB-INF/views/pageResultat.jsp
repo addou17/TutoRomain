@@ -11,5 +11,6 @@
 
 Salut <strong> <c:out value="${personne.prenom}"/> <c:out value="${personne.nom}"/> </strong> 
 
+
 </body>
 </html>
