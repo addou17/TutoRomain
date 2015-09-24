@@ -38,6 +38,7 @@
 			<th>Age</th>
 			<th></th>
 			
+			
 		</tr>
 		<c:forEach var="item" items="${toutLeMonde}" varStatus="elm">
 			<tr>
@@ -46,7 +47,9 @@
 				<td>${item.prenom}</td>
 				<td>${item.age}</td>
 				<td><a href='/ProjetTest/lien/update/<c:out value="${item.id}"/>'><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
-				<a href='/ProjetTest/lien/delete/<c:out value="${item.id}"/>'><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a></td>
+				<a href='/ProjetTest/lien/delete/<c:out value="${item.id}"/>'><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+				<a href='/ProjetTest/commentaires/<c:out value="${item.id}"/>'><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a></td>
+			
 			</tr>
 
 		</c:forEach>

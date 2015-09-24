@@ -13,7 +13,7 @@ import model.Personne;
 public class PersonneDao {
 	
 	@Autowired
-	JdbcTemplate jdbcTemplate;
+	private JdbcTemplate jdbcTemplate;
 
 	public void create(Personne personne ) {
 		String request = "insert into Personne (NOM, PRENOM, AGE) Values (?, ?, ?)";
