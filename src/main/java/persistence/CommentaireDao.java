@@ -36,7 +36,7 @@ public class CommentaireDao {
 	
 	public void create(Commentaire commentaire)
 	{
-		String request = "insert into Personne (COMMENTAIRE, ID_PERSONNE, PSEUDO) Values ( ?, ?, ?)";
+		String request = "insert into Commentaire (COMMENTAIRE, ID_PERSONNE, PSEUDO) Values ( ?, ?, ?)";
 		jdbcTemplate.update(request, commentaire.getCommentaire(), commentaire.getIdPersonne(), commentaire.getPseudo());
 	}
 	

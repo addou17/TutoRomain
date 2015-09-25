@@ -10,6 +10,12 @@
 <title>My wonderful page</title>
 </head>
 <body>
+<br/>
+	<ul id="navigation" class="nav nav-pills">
+	  <li role="presentation"><a href="/ProjetTest">Home</a></li>
+	  <li role="presentation" class="active"><a href="/ProjetTest/lien/click">New Person</a></li>
+	  <li role="presentation"><a href="/ProjetTest/lien/affichage">Show All</a></li>
+	</ul>
 	<p>
 	<center>
 		<h1>Ajout d'une personne</h1>

@@ -9,13 +9,12 @@
 <title>Resultat</title>
 </head>
 <body>
-<table><tr>
-
-<td><a class="btn btn-primary btn-lg" href="/ProjetTest" role="button">Home</a></td>
-<td><a class="btn btn-primary btn-lg" href="/ProjetTest/lien/click" role="button">New Person</a></td>
-<td><a class="btn btn-primary btn-lg" href="/ProjetTest/lien/affichage" role="button">Show All</a></td>
-</tr>
-</table>
+<br/>
+<ul id="navigation" class="nav nav-pills">
+	  <li role="presentation"><a href="/ProjetTest">Home</a></li>
+	  <li role="presentation"><a href="/ProjetTest/lien/click">New Person</a></li>
+	  <li role="presentation" class="active"><a href="/ProjetTest/lien/affichage">Show All</a></li>
+	</ul>
 
 <br/>
 	
